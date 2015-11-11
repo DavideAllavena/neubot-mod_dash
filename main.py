@@ -103,7 +103,7 @@ def main(args):
             # Code adapted from neubot/server.py
 
             conf["http.server.rootdir"] = ""
-            server = ServerHTTP(POLLER)
+            server = HttpServer(POLLER)
             server.configure(conf)
             server.listen((address, port))
 
